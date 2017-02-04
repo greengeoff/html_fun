@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+  box-sizing:border-box;
+}
+body{
+  
+}
+#mainframe{
+  position: relative;
+}
+.row{
+  font-size: 0px;
+  margin:0px;
+  padding:0px;
+}
+.row .push-pad{
+
+  margin:0px;
+  padding:0px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+#top-left{
+    border-top: 24px solid #333;
+    border-left: 24px solid #333;
+    border-right: 12px solid #333;
+    border-bottom: 12px solid #333;  
+    border-top-left-radius: 100%;
+    background: #3c8;
+}
+#top-right{
+    border-top: 24px solid #333;
+    border-left: 12px solid #333;
+    border-right: 24px solid #333;
+    border-bottom: 12px solid #333;  
+    border-top-right-radius: 100%;
+    background: #d33;
+}
+#bot-left{
+    border-top: 12px solid #333;
+    border-left: 24px solid #333;
+    border-right: 12px solid #333;
+    border-bottom: 24px solid #333;  
+    border-bottom-left-radius: 100%;
+    background: #dd3;
+}
+#bot-right{
+    border-top: 12px solid #333;
+    border-left: 12px solid #333;
+    border-right: 24px solid #333;
+    border-bottom: 24px solid #333;  
+    border-bottom-right-radius: 100%;
+    background: #33d;
+}
+#centerModule{
+  position: absolute;
+  z-index: 10;
+  background-color: #333;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  top:150px;
+  left:150px;
+}
+#startButton{
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 15;
+  top: 120px;
+  left: 120px;
+  background-color: #2f2;
+}
+#display{
+  width: 36px;
+  height: 36px;
+  border-radius: 4%;
+  position: absolute;
+  z-index: 15;
+  top: 110px;
+  left: 60px;
+  padding: 4px 4px 4px 10px;
+  font-size: 28px;
+  color:;
+  background-color: #ccc;
+}
+#label{
+  color: white;
+  font: 40px arial;
+  border-radius: 4%;
+  position: absolute;
+  z-index: 15;
+  top: 37px;
+  left: 30px;
+}
+#rtm{
+  font: 18px arial;
+}
+
+</style>
+</head>
+
+
+<body>
+<h1>Funny Shapes Galore</h1>
+<div id="mainframe">
+
+  <div class="row">
+    <div class="push-pad" id="top-left"></div>
+    <div onclick="alert()" class="push-pad" id="top-right"></div>
+  </div>
+
+  <div class="row">
+    <div class="push-pad" id="bot-left"></div>
+    <div class="push-pad" id="bot-right"></div>
+  </div>
+
+  <div id="centerModule">
+    <span id="label">SIMON<span id="rtm">&#174</span></span>
+    <span id="display">3</span>
+    <span id="startButton"></span>
+  </div>
+
+</div>
+
+</body>
+</html>
